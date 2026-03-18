@@ -1,4 +1,6 @@
-/**
+/**import { createClient } from '@supabase/supabase-js';
+
+
  * Supabase REST API utility
  * Uses the PostgREST API directly — no SDK needed
  */
@@ -25,7 +27,9 @@ export async function getBlogPosts() {
     }
   );
 
-  if (!res.ok) {
+  if (!res.ok) {export const supabase = (SUPABASE_URL && SUPABASE_ANON_KEY) ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+
+                
     console.error('Failed to fetch blog posts:', res.status, await res.text());
     return [];
   }
