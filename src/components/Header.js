@@ -12,7 +12,8 @@ export default function Header() {
           <ul className="nav-links">
             <li><Link href="/">Exams</Link></li>
             <li><Link href="/upload">Upload</Link></li>
-            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><a href="https://github.com/rshoaib/certquiz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           </ul>
         </nav>
       </div>
