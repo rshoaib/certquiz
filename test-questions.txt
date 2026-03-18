@@ -1,0 +1,39 @@
+1. What is the primary function of a firewall in network security?
+A) Encrypt data at rest
+B) Filter network traffic based on predefined rules
+C) Authenticate users against a directory
+D) Compress data for efficient storage
+Answer: B
+Explanation: A firewall monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted and untrusted networks.
+
+2. Which encryption algorithm is considered asymmetric?
+A) AES
+B) DES
+C) RSA
+D) Blowfish
+Answer: C
+Explanation: RSA is an asymmetric encryption algorithm that uses a pair of keys (public and private). AES, DES, and Blowfish are all symmetric encryption algorithms that use a single key.
+
+3. What does the CIA triad stand for in information security?
+A) Central Intelligence Agency
+B) Confidentiality, Integrity, Availability
+C) Control, Identity, Authentication
+D) Compliance, Infrastructure, Access
+Answer: B
+Explanation: The CIA triad is a widely-used information security model that guides organizational security policies. Confidentiality ensures data is accessed only by authorized parties, Integrity ensures data is not tampered with, and Availability ensures systems are accessible when needed.
+
+4. Which type of attack involves sending a large number of requests to overwhelm a server?
+A) Man-in-the-Middle
+B) SQL Injection
+C) Denial of Service (DoS)
+D) Cross-Site Scripting (XSS)
+Answer: C
+Explanation: A Denial of Service (DoS) attack aims to make a machine or network resource unavailable by flooding it with excessive requests, consuming server resources and bandwidth.
+
+5. What is the purpose of multi-factor authentication (MFA)?
+A) To encrypt data in transit
+B) To require multiple forms of verification before granting access
+C) To monitor network traffic
+D) To create backup copies of data
+Answer: B
+Explanation: Multi-factor authentication requires users to provide two or more verification factors to gain access, making it significantly harder for attackers to compromise accounts even if they obtain a password.

@@ -1,0 +1,721 @@
+{
+  "exam": {
+    "id": "security-plus-sy0-701",
+    "title": "CompTIA Security+ (SY0-701)",
+    "description": "Validate your baseline cybersecurity skills. Covers threats, vulnerabilities, architecture, operations, and governance.",
+    "time_limit_minutes": 90,
+    "passing_score": 83,
+    "total_questions": 50,
+    "icon": "🛡️",
+    "status": "active",
+    "domains": [
+      { "number": 1, "name": "General Security Concepts", "weight": 12 },
+      { "number": 2, "name": "Threats, Vulnerabilities & Mitigations", "weight": 22 },
+      { "number": 3, "name": "Security Architecture", "weight": 18 },
+      { "number": 4, "name": "Security Operations", "weight": 28 },
+      { "number": 5, "name": "Security Program Management & Oversight", "weight": 20 }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "domain": "General Security Concepts",
+      "domainNumber": 1,
+      "question": "Which of the following BEST describes the concept of least privilege?",
+      "options": [
+        "Users should have administrative access to perform all tasks efficiently",
+        "Users should be granted only the minimum permissions necessary to perform their job functions",
+        "All users should share a common set of elevated credentials for convenience",
+        "Privileges should be assigned based on seniority within the organization"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The principle of least privilege ensures that users, processes, and systems are granted only the minimum level of access necessary to perform their intended functions. This reduces the attack surface and limits the potential damage from compromised accounts or insider threats."
+    },
+    {
+      "id": 2,
+      "domain": "General Security Concepts",
+      "domainNumber": 1,
+      "question": "An organization wants to implement a security framework that categorizes controls as preventive, detective, and corrective. Which concept does this represent?",
+      "options": [
+        "Defense in depth",
+        "Security control categories",
+        "Zero trust architecture",
+        "Risk transference"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Security control categories classify controls by their function: preventive controls stop incidents before they occur, detective controls identify incidents that have occurred, and corrective controls restore systems after an incident. This is a fundamental concept in security frameworks."
+    },
+    {
+      "id": 3,
+      "domain": "General Security Concepts",
+      "domainNumber": 1,
+      "question": "What is the primary purpose of implementing non-repudiation in a security system?",
+      "options": [
+        "To encrypt data at rest and in transit",
+        "To ensure that a party cannot deny having performed a specific action",
+        "To provide redundant backup systems",
+        "To authenticate users with biometric data"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Non-repudiation ensures that a party involved in a communication or transaction cannot deny having sent or received a message or having performed an action. Digital signatures and audit logs are common mechanisms for achieving non-repudiation."
+    },
+    {
+      "id": 4,
+      "domain": "General Security Concepts",
+      "domainNumber": 1,
+      "question": "Which of the following authentication factors is an example of 'something you are'?",
+      "options": [
+        "A smart card",
+        "A one-time password from an authenticator app",
+        "A fingerprint scan",
+        "A memorized PIN"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Authentication factors are categorized as: something you know (passwords, PINs), something you have (smart cards, tokens), and something you are (biometrics like fingerprints, retina scans, facial recognition). A fingerprint scan is a biometric factor — something you are."
+    },
+    {
+      "id": 5,
+      "domain": "General Security Concepts",
+      "domainNumber": 1,
+      "question": "A security administrator implements a policy requiring all employees to change passwords every 90 days and use complex passwords. Which security concept is being applied?",
+      "options": [
+        "Separation of duties",
+        "Password policy enforcement",
+        "Data loss prevention",
+        "Network segmentation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Password policy enforcement defines rules for password creation, complexity, expiration, and reuse. Requiring regular password changes and complexity requirements are standard password policy controls that help protect against credential-based attacks."
+    },
+    {
+      "id": 6,
+      "domain": "General Security Concepts",
+      "domainNumber": 1,
+      "question": "Which of the following BEST describes the Zero Trust security model?",
+      "options": [
+        "Trust all internal users and verify external users only",
+        "Never trust any entity by default, always verify regardless of location",
+        "Trust is established once and maintained throughout the session",
+        "External traffic requires MFA while internal traffic does not"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zero Trust operates on the principle of 'never trust, always verify.' It assumes no implicit trust based on network location or prior authentication. Every access request is fully authenticated, authorized, and encrypted before access is granted, regardless of whether the request originates inside or outside the network."
+    },
+    {
+      "id": 7,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "A user receives an email appearing to be from their bank, asking them to click a link to verify their account. The link leads to a fake website that harvests credentials. What type of attack is this?",
+      "options": [
+        "Vishing",
+        "Phishing",
+        "Smishing",
+        "Whaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Phishing is a social engineering attack that uses fraudulent emails, websites, or messages to trick victims into revealing sensitive information. Vishing uses voice calls, smishing uses SMS, and whaling specifically targets high-profile individuals like executives."
+    },
+    {
+      "id": 8,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "An attacker injects malicious SQL statements into a login form to bypass authentication. What type of vulnerability is being exploited?",
+      "options": [
+        "Cross-site scripting (XSS)",
+        "SQL injection",
+        "Buffer overflow",
+        "Directory traversal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SQL injection occurs when an attacker inserts malicious SQL code into input fields that are processed by a back-end database. By manipulating SQL queries, attackers can bypass authentication, access unauthorized data, modify data, or execute administrative operations on the database."
+    },
+    {
+      "id": 9,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "Which type of malware encrypts files and demands payment for the decryption key?",
+      "options": [
+        "Trojan",
+        "Spyware",
+        "Ransomware",
+        "Rootkit"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Ransomware is a type of malware that encrypts the victim's files or locks their system, then demands a ransom payment (typically in cryptocurrency) in exchange for the decryption key. Notable examples include WannaCry and NotPetya."
+    },
+    {
+      "id": 10,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "An attacker positions themselves between two communicating parties to intercept and potentially alter the communication. What is this attack called?",
+      "options": [
+        "Replay attack",
+        "On-path (man-in-the-middle) attack",
+        "DNS poisoning",
+        "ARP spoofing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "An on-path attack (formerly known as man-in-the-middle or MITM) occurs when an attacker secretly intercepts and potentially alters communication between two parties who believe they are communicating directly with each other. This allows the attacker to eavesdrop on, modify, or inject data into the communication."
+    },
+    {
+      "id": 11,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "Which of the following attacks involves overwhelming a target system with traffic to make it unavailable to legitimate users?",
+      "options": [
+        "Social engineering",
+        "Brute force attack",
+        "Distributed Denial of Service (DDoS)",
+        "Privilege escalation"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A Distributed Denial of Service (DDoS) attack uses multiple compromised systems (often a botnet) to flood a target with traffic, exhausting its resources and making it unavailable to legitimate users. Unlike a simple DoS, a DDoS originates from many distributed sources, making it harder to mitigate."
+    },
+    {
+      "id": 12,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "What type of threat actor typically has the most resources and conducts long-term, sophisticated cyber operations?",
+      "options": [
+        "Script kiddies",
+        "Hacktivists",
+        "Advanced Persistent Threats (APTs) / Nation-state actors",
+        "Insider threats"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Advanced Persistent Threats (APTs) and nation-state actors have the most resources, including government funding, sophisticated tools, and skilled personnel. They conduct long-term, stealthy campaigns targeting specific organizations or nations for espionage, sabotage, or strategic advantage."
+    },
+    {
+      "id": 13,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "A security analyst discovers that a recently patched vulnerability in a web application was exploited before the patch was available. What type of attack was this?",
+      "options": [
+        "Known vulnerability exploit",
+        "Zero-day attack",
+        "Brute force attack",
+        "Side-channel attack"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A zero-day attack exploits a previously unknown vulnerability before the vendor has released a patch or fix. The term 'zero-day' refers to the fact that the developers have had zero days to address the vulnerability. These attacks are particularly dangerous because there are no existing signatures or patches to defend against them."
+    },
+    {
+      "id": 14,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "An employee plugs in a USB drive they found in the parking lot, which installs malware on their workstation. This is an example of which social engineering technique?",
+      "options": [
+        "Tailgating",
+        "Baiting",
+        "Pretexting",
+        "Impersonation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Baiting involves luring victims with something enticing, such as a USB drive left in a public location. When the target picks up and uses the bait, malware is installed or sensitive information is compromised. It exploits human curiosity and is a form of social engineering."
+    },
+    {
+      "id": 15,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "Which of the following BEST describes a supply chain attack?",
+      "options": [
+        "Attacking a company's retail distribution network",
+        "Compromising a trusted software vendor or hardware manufacturer to deliver malware through their products",
+        "Stealing products during shipping",
+        "Disrupting a company's procurement process"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A supply chain attack targets the less-secure elements of a supply chain, such as software vendors, hardware manufacturers, or managed service providers. By compromising a trusted supplier, attackers can distribute malware through legitimate software updates or hardware components, affecting all downstream customers."
+    },
+    {
+      "id": 16,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "Which type of cross-site scripting (XSS) attack stores the malicious script permanently on the target server?",
+      "options": [
+        "Reflected XSS",
+        "Stored (persistent) XSS",
+        "DOM-based XSS",
+        "Self-XSS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stored (or persistent) XSS occurs when malicious script is permanently stored on the target server, such as in a database, comment field, or forum post. Every user who visits the affected page will execute the malicious script, making it more dangerous than reflected XSS, which requires the victim to click a specific link."
+    },
+    {
+      "id": 17,
+      "domain": "Threats, Vulnerabilities & Mitigations",
+      "domainNumber": 2,
+      "question": "An attacker uses a list of commonly used passwords to attempt to gain access to multiple accounts. What type of attack is this?",
+      "options": [
+        "Rainbow table attack",
+        "Password spraying",
+        "Credential stuffing",
+        "Dictionary attack"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Password spraying attempts a small number of commonly used passwords against many accounts, as opposed to brute force which tries many passwords against one account. This technique avoids account lockout policies by staying below the threshold for each individual account."
+    },
+    {
+      "id": 18,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "Which network security device inspects traffic at the application layer and can make decisions based on the content of the traffic?",
+      "options": [
+        "Packet-filtering firewall",
+        "Web Application Firewall (WAF)",
+        "Network switch",
+        "Load balancer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A Web Application Firewall (WAF) operates at Layer 7 (application layer) of the OSI model. It inspects HTTP/HTTPS traffic and can detect and block application-layer attacks such as SQL injection, XSS, and other OWASP Top 10 vulnerabilities by analyzing the content and patterns of web requests."
+    },
+    {
+      "id": 19,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "An organization deploys a network with separate segments for HR, Finance, and Engineering departments. Which security principle does this implement?",
+      "options": [
+        "Data masking",
+        "Network segmentation",
+        "Tokenization",
+        "Data classification"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Network segmentation divides a network into multiple segments or subnets, each acting as its own network. This limits lateral movement by attackers, contains breaches, improves monitoring, and allows for more granular access control policies between departments."
+    },
+    {
+      "id": 20,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "Which of the following provides the MOST secure method for connecting remote employees to the corporate network?",
+      "options": [
+        "Remote Desktop Protocol (RDP) over the internet",
+        "VPN with IPSec or SSL/TLS encryption",
+        "SSH tunneling to a web proxy",
+        "Unencrypted HTTP access to internal resources"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A VPN (Virtual Private Network) using IPSec or SSL/TLS encryption creates a secure, encrypted tunnel between the remote user's device and the corporate network. This protects data in transit from interception and ensures that only authenticated and authorized users can access internal resources."
+    },
+    {
+      "id": 21,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "Which cloud service model gives the customer the MOST control over the underlying infrastructure?",
+      "options": [
+        "Software as a Service (SaaS)",
+        "Platform as a Service (PaaS)",
+        "Infrastructure as a Service (IaaS)",
+        "Function as a Service (FaaS)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Infrastructure as a Service (IaaS) provides the most control to the customer, including virtual machines, storage, and networking. The customer manages the OS, applications, and data, while the cloud provider manages the physical infrastructure. SaaS gives the least control, and PaaS falls in between."
+    },
+    {
+      "id": 22,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "An organization wants to ensure that if one security control fails, other controls will still protect the system. Which concept does this describe?",
+      "options": [
+        "Single point of failure elimination",
+        "Defense in depth",
+        "Risk avoidance",
+        "Incident response"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Defense in depth (also called layered security) implements multiple layers of security controls so that if one layer fails, others still provide protection. This includes physical, technical, and administrative controls working together to create redundant security layers."
+    },
+    {
+      "id": 23,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "What is the primary purpose of a DMZ (Demilitarized Zone) in network architecture?",
+      "options": [
+        "To provide a wireless guest network",
+        "To host public-facing services while isolating the internal network",
+        "To store encrypted backup data",
+        "To connect two geographic sites via VPN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A DMZ is a perimeter network segment that sits between the external internet and the internal private network. It hosts public-facing services like web servers, email servers, and DNS servers while providing an additional layer of isolation to protect the internal network from direct exposure to the internet."
+    },
+    {
+      "id": 24,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "Which encryption approach encrypts data before it is written to storage?",
+      "options": [
+        "Encryption in transit",
+        "Encryption at rest",
+        "End-to-end encryption",
+        "Transport Layer Security"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Encryption at rest protects data that is stored on disk, databases, or other storage media. The data is encrypted before being written to storage and decrypted when read, protecting against unauthorized access to the physical storage media, such as stolen hard drives or unauthorized database access."
+    },
+    {
+      "id": 25,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "An organization uses containerized applications deployed in Kubernetes. Which security concern is MOST specific to this environment?",
+      "options": [
+        "SQL injection in web forms",
+        "Container escape and image vulnerability management",
+        "Physical security of server rooms",
+        "Social engineering of employees"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Container-specific security concerns include container escape (breaking out of the container to access the host), vulnerabilities in container images, insecure container configurations, and inadequate orchestration security. Image scanning, runtime protection, and proper Kubernetes RBAC are essential container security practices."
+    },
+    {
+      "id": 26,
+      "domain": "Security Architecture",
+      "domainNumber": 3,
+      "question": "Which protocol is used to securely automate the issuance and renewal of SSL/TLS certificates?",
+      "options": [
+        "SNMP",
+        "ACME (Automated Certificate Management Environment)",
+        "LDAP",
+        "RADIUS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ACME (Automated Certificate Management Environment) is a protocol for automating interactions between certificate authorities and web servers, enabling automatic issuance, renewal, and revocation of SSL/TLS certificates. Let's Encrypt is the most well-known CA that uses the ACME protocol."
+    },
+    {
+      "id": 27,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "A security team monitors network traffic and system logs to identify potential security incidents. Which tool aggregates logs from multiple sources for analysis?",
+      "options": [
+        "IDS (Intrusion Detection System)",
+        "SIEM (Security Information and Event Management)",
+        "DLP (Data Loss Prevention)",
+        "NAC (Network Access Control)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A SIEM collects, aggregates, and analyzes log data from multiple sources across the organization's IT infrastructure. It provides real-time monitoring, correlation of events, alerting, and reporting, enabling security teams to detect and respond to potential security incidents effectively."
+    },
+    {
+      "id": 28,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "During an incident response, what is the primary goal of the containment phase?",
+      "options": [
+        "To identify the root cause of the incident",
+        "To limit the scope and impact of the incident",
+        "To restore systems to normal operation",
+        "To document lessons learned"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The containment phase of incident response focuses on limiting the scope and impact of a security incident. This may involve isolating affected systems, blocking malicious IP addresses, disabling compromised accounts, or segmenting network traffic to prevent the incident from spreading."
+    },
+    {
+      "id": 29,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "Which type of vulnerability scan is performed with valid credentials to provide the most comprehensive results?",
+      "options": [
+        "External scan",
+        "Credentialed (authenticated) scan",
+        "Passive scan",
+        "Discovery scan"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A credentialed (authenticated) scan uses valid login credentials to log into target systems, providing deeper visibility into the system's configuration, installed software, patches, and security settings. This produces more accurate and comprehensive results than non-credentialed scans, which can only assess externally visible vulnerabilities."
+    },
+    {
+      "id": 30,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "A company wants to ensure that deleted data cannot be recovered from decommissioned hard drives. Which method should they use?",
+      "options": [
+        "Formatting the drive",
+        "Degaussing or physical destruction",
+        "Deleting the partition table",
+        "Encrypting the drive after deletion"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Degaussing (using a strong magnetic field to erase data) or physical destruction (shredding, crushing, or incinerating) are the most reliable methods for ensuring data cannot be recovered. Simple formatting or deleting partitions does not actually remove the data from the disk platters and can be recovered with forensic tools."
+    },
+    {
+      "id": 31,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "Which of the following is a key benefit of implementing automation in security operations?",
+      "options": [
+        "Eliminating the need for security analysts",
+        "Reducing response time to security events and minimizing human error",
+        "Replacing all manual security processes",
+        "Guaranteeing zero false positives"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Security automation reduces response time by automatically executing predefined actions for common security events, and minimizes human error in repetitive tasks. SOAR (Security Orchestration, Automation, and Response) platforms help automate incident response playbooks, but human analysts are still needed for complex decision-making."
+    },
+    {
+      "id": 32,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "An organization implements a system that monitors endpoint behavior and can automatically isolate a compromised device. What type of solution is this?",
+      "options": [
+        "Antivirus software",
+        "EDR (Endpoint Detection and Response)",
+        "Firewall",
+        "VLAN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "EDR (Endpoint Detection and Response) solutions continuously monitor endpoint activities, detect suspicious behaviors, and can automatically respond to threats by isolating devices, killing malicious processes, or rolling back changes. Unlike traditional antivirus, EDR focuses on behavior-based detection and automated response."
+    },
+    {
+      "id": 33,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "During a forensic investigation, what is the correct order for handling digital evidence?",
+      "options": [
+        "Analyze, collect, preserve, document",
+        "Identify, preserve, collect, analyze, report",
+        "Collect, analyze, report, preserve",
+        "Document, analyze, collect, destroy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The proper order for digital forensics follows the chain: Identify (recognize potential evidence), Preserve (protect evidence from alteration), Collect (gather evidence using forensic methods), Analyze (examine evidence), and Report (document findings). Maintaining chain of custody throughout is critical for legal admissibility."
+    },
+    {
+      "id": 34,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "Which log source would be MOST useful for investigating unauthorized access to a web application?",
+      "options": [
+        "DHCP server logs",
+        "Web server access logs and application logs",
+        "Print server logs",
+        "NTP server logs"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Web server access logs record all HTTP requests including source IPs, requested URLs, response codes, and timestamps. Application logs record authentication attempts, errors, and application-specific events. Together, they provide the most relevant information for investigating unauthorized web application access."
+    },
+    {
+      "id": 35,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "What is the primary purpose of a honeypot in network security?",
+      "options": [
+        "To store sensitive data securely",
+        "To attract and detect attackers by simulating vulnerable systems",
+        "To encrypt network traffic",
+        "To balance network load across servers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A honeypot is a decoy system designed to attract attackers and study their techniques. It appears as a legitimate, vulnerable target but is actually monitored and isolated. Honeypots help security teams detect attacks, gather threat intelligence, and understand attacker behavior without risking production systems."
+    },
+    {
+      "id": 36,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "An administrator wants to ensure that only approved devices can connect to the corporate network. Which technology should be implemented?",
+      "options": [
+        "DLP",
+        "NAC (Network Access Control)",
+        "VPN",
+        "WAF"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Network Access Control (NAC) enforces security policies for devices attempting to connect to the network. It can check device health, compliance status, authentication credentials, and other attributes before granting network access. Non-compliant devices can be quarantined or denied access."
+    },
+    {
+      "id": 37,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "Which backup strategy involves copying only the data that has changed since the last full backup?",
+      "options": [
+        "Full backup",
+        "Differential backup",
+        "Snapshot backup",
+        "Mirror backup"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A differential backup copies all data that has changed since the last full backup. Each differential backup grows larger as more changes accumulate. To restore, you need only the last full backup plus the latest differential backup. This differs from incremental backups, which copy only changes since the last backup of any type."
+    },
+    {
+      "id": 38,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "A security analyst receives an alert about unusual outbound traffic to a foreign IP address at 3 AM. Which is the BEST first response action?",
+      "options": [
+        "Immediately shut down all network connections",
+        "Investigate the traffic to determine if it is malicious and identify the source",
+        "Ignore the alert as it's likely a false positive",
+        "Reformat the machine generating the traffic"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The best first response is to investigate and triage the alert to determine if the traffic is malicious. This includes identifying the source host, analyzing the traffic content, checking for IOCs (Indicators of Compromise), and determining the scope of the potential incident before taking containment actions."
+    },
+    {
+      "id": 39,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "Which of the following is a PRIMARY benefit of using infrastructure as code (IaC) from a security perspective?",
+      "options": [
+        "It eliminates the need for security monitoring",
+        "It enables consistent, repeatable, and auditable infrastructure deployments",
+        "It makes systems immune to cyber attacks",
+        "It removes the need for access controls"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Infrastructure as Code (IaC) allows infrastructure configurations to be version-controlled, reviewed, tested, and deployed consistently. From a security perspective, this ensures repeatable deployments with known-good configurations, enables automated compliance scanning, and provides audit trails for all infrastructure changes."
+    },
+    {
+      "id": 40,
+      "domain": "Security Operations",
+      "domainNumber": 4,
+      "question": "What is the purpose of a tabletop exercise in security operations?",
+      "options": [
+        "To test the physical security of data center tables",
+        "To walk through a simulated incident scenario to evaluate response procedures",
+        "To inventory all IT assets on employees' desks",
+        "To practice installing security software manually"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A tabletop exercise is a discussion-based exercise where team members walk through a simulated incident scenario to evaluate and improve incident response plans, communication procedures, and decision-making processes. It does not involve actual system changes but helps identify gaps in procedures and training."
+    },
+    {
+      "id": 41,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "Which risk management strategy involves purchasing insurance to cover potential financial losses from a security breach?",
+      "options": [
+        "Risk avoidance",
+        "Risk transference",
+        "Risk mitigation",
+        "Risk acceptance"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Risk transference shifts the financial impact of a risk to a third party, typically through insurance policies or contracts. Cyber insurance is a common example where an organization transfers the financial risk of a data breach to an insurance provider, though the organizational risk to reputation is not fully transferable."
+    },
+    {
+      "id": 42,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "An organization must comply with regulations regarding the handling of credit card data. Which standard applies?",
+      "options": [
+        "HIPAA",
+        "PCI DSS",
+        "SOX",
+        "FERPA"
+      ],
+      "correctAnswer": 1,
+      "explanation": "PCI DSS (Payment Card Industry Data Security Standard) is a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment. HIPAA covers healthcare data, SOX covers financial reporting, and FERPA covers educational records."
+    },
+    {
+      "id": 43,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "Which of the following documents defines the rules of behavior and expectations for employees using organizational IT systems?",
+      "options": [
+        "Service Level Agreement (SLA)",
+        "Acceptable Use Policy (AUP)",
+        "Business Impact Analysis (BIA)",
+        "Request for Proposal (RFP)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "An Acceptable Use Policy (AUP) defines the permitted uses of organizational IT resources, including computers, networks, email, and internet access. It establishes rules, guidelines, and consequences for violations, helping to protect the organization from misuse and security risks."
+    },
+    {
+      "id": 44,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "What is the primary purpose of a Business Impact Analysis (BIA)?",
+      "options": [
+        "To evaluate the financial health of the business",
+        "To identify critical business functions and the impact of disruption",
+        "To audit employee performance",
+        "To design new products and services"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A Business Impact Analysis (BIA) identifies and evaluates the potential effects of disruption to critical business operations. It determines RTOs (Recovery Time Objectives), RPOs (Recovery Point Objectives), and the financial and operational impact of downtime, forming the foundation for business continuity planning."
+    },
+    {
+      "id": 45,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "Which framework is commonly used by organizations to assess and improve their cybersecurity posture?",
+      "options": [
+        "Agile Methodology",
+        "NIST Cybersecurity Framework (CSF)",
+        "Waterfall Development Model",
+        "ITIL Service Management"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The NIST Cybersecurity Framework (CSF) provides a structured approach for organizations to manage cybersecurity risks. It consists of five core functions: Identify, Protect, Detect, Respond, and Recover. It is widely used across industries and is flexible enough to be applied to organizations of all sizes."
+    },
+    {
+      "id": 46,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "A company requires all third-party vendors to undergo security assessments before being granted network access. What type of risk management activity is this?",
+      "options": [
+        "Vulnerability scanning",
+        "Third-party risk management / vendor assessment",
+        "Penetration testing",
+        "Internal audit"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Third-party risk management involves assessing and monitoring the security posture of vendors, suppliers, and other external parties that have access to organizational systems or data. Vendor security assessments help identify and mitigate risks introduced through the supply chain."
+    },
+    {
+      "id": 47,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "Which regulation requires organizations to protect the personal data of European Union residents?",
+      "options": [
+        "CCPA",
+        "GDPR",
+        "FISMA",
+        "GLBA"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The General Data Protection Regulation (GDPR) is a comprehensive data privacy regulation that applies to organizations processing personal data of EU residents, regardless of where the organization is located. It mandates data protection measures, breach notifications, and gives individuals rights over their personal data."
+    },
+    {
+      "id": 48,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "An organization conducts annual security training for all employees. What is the PRIMARY goal of this program?",
+      "options": [
+        "To teach employees how to code securely",
+        "To build a security-aware culture and reduce human-factor vulnerabilities",
+        "To certify employees as security professionals",
+        "To satisfy the IT department's training budget requirements"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Security awareness training aims to educate employees about security threats (phishing, social engineering, etc.), organizational policies, and best practices. The primary goal is to build a security-aware culture where employees can recognize and appropriately respond to threats, reducing the human factor as an attack vector."
+    },
+    {
+      "id": 49,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "What is the difference between a policy and a procedure in the context of security governance?",
+      "options": [
+        "Policies are technical and procedures are administrative",
+        "A policy defines what should be done; a procedure defines how to do it",
+        "Policies are optional while procedures are mandatory",
+        "There is no functional difference between the two"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In security governance, a policy is a high-level statement of management's intent and direction (the 'what'), while a procedure provides detailed, step-by-step instructions for implementing the policy (the 'how'). For example, a policy may state that data must be encrypted, while a procedure details the specific encryption software and process to use."
+    },
+    {
+      "id": 50,
+      "domain": "Security Program Management & Oversight",
+      "domainNumber": 5,
+      "question": "During a risk assessment, the team calculates the Annual Loss Expectancy (ALE). What formula is used?",
+      "options": [
+        "ALE = Asset Value × Exposure Factor",
+        "ALE = Single Loss Expectancy (SLE) × Annual Rate of Occurrence (ARO)",
+        "ALE = Total Risk / Number of Assets",
+        "ALE = Revenue × Loss Percentage"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Annual Loss Expectancy (ALE) is calculated by multiplying the Single Loss Expectancy (SLE) by the Annual Rate of Occurrence (ARO). SLE represents the expected monetary loss each time an incident occurs, and ARO represents how often the incident is expected to occur per year. ALE = SLE × ARO helps prioritize risk mitigation investments."
+    }
+  ]
+}
