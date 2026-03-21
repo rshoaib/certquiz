@@ -14,6 +14,23 @@ export async function generateMetadata({ params }) {
   return {
     title: `${post.title} | CertQuiz`,
     description: post.description,
+    keywords: post.tags || [],
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      title: `${post.title} | CertQuiz`,
+      description: post.description,
+      url: `/blog/${slug}`,
+      type: 'article',
+      publishedTime: post.created_at,
+      authors: [post.author],
+      ...(post.hero_image ? { images: [{ url: post.hero_image, alt: post.title }] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      ...(post.hero_image ? { images: [post.hero_image] } : {}),
+    },
   };
 }
 
@@ -25,8 +42,24 @@ export default async function BlogArticlePage({ params }) {
     notFound();
   }
 
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    author: { '@type': 'Person', name: post.author },
+    datePublished: post.created_at,
+    publisher: { '@type': 'Organization', name: 'CertQuiz', url: 'https://www.getcertquiz.com' },
+    mainEntityOfPage: `https://www.getcertquiz.com/blog/${slug}`,
+    ...(post.hero_image ? { image: post.hero_image } : {}),
+  };
+
   return (
     <article className="container blog-article" style={{ paddingTop: '2rem', paddingBottom: '3rem' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <div style={{ maxWidth: '740px', margin: '0 auto' }}>
         <span className="blog-card-category" style={{ marginBottom: '0.75rem', display: 'inline-block' }}>
           {post.category}
@@ -66,3 +99,4 @@ export default async function BlogArticlePage({ params }) {
     </article>
   );
 }
+

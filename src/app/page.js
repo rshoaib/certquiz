@@ -2,6 +2,85 @@ import Link from 'next/link';
 import ExamCard from '@/components/ExamCard';
 import securityPlusData from '@/data/security-plus.json';
 
+export const metadata = {
+  title: 'CertQuiz — Free IT Certification Practice Tests | VCE Player Online',
+  description:
+    'Practice for CompTIA Security+ SY0-701, AWS, Azure AZ-104, CCNA and more. Upload VCE, PDF, or DOCX files and practice instantly — free, no signup, 100% private.',
+  keywords: [
+    'free practice test',
+    'CompTIA Security+ practice exam',
+    'SY0-701 practice test',
+    'free VCE player online',
+    'VCE exam simulator free',
+    'IT certification practice tests',
+    'CCNA practice test free',
+    'Azure AZ-104 practice exam',
+    'AWS Cloud Practitioner practice test',
+    'free exam questions',
+    'certification quiz',
+    'VCE to PDF converter',
+    'online VCE player no download',
+  ],
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'CertQuiz — Free IT Certification Practice Tests',
+    description: 'Upload VCE, PDF, DOCX files and practice instantly. Free, no signup, 100% private.',
+    url: '/',
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'CertQuiz',
+  url: 'https://www.getcertquiz.com',
+  description: 'Free IT certification practice tests. Upload VCE, PDF, or Word files and practice instantly in your browser.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://www.getcertquiz.com/blog?q={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Is CertQuiz really free?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, CertQuiz is 100% free. No trial, no subscription, no limits. Unlike VCE Simulator ($40), CertQuiz works in your browser at no cost.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What file formats does CertQuiz support?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'CertQuiz supports VCE, PDF, DOCX, TXT files, or you can paste questions directly. Your files are parsed entirely in your browser — nothing is uploaded to any server.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need to create an account to use CertQuiz?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. CertQuiz requires zero signup. Just click and start practicing. Your data stays 100% private in your browser with zero data collection.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What certifications does CertQuiz cover?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'CertQuiz offers pre-built practice exams for CompTIA Security+ (SY0-701), and is adding Microsoft Azure (AZ-104), AWS Cloud Practitioner (CLF-C02), and Cisco CCNA (200-301). You can also upload your own exam questions for any certification.',
+      },
+    },
+  ],
+};
+
 const exams = [
   securityPlusData.exam,
   {
@@ -39,6 +118,16 @@ const exams = [
 export default function Home() {
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       {/* Hero */}
       <section className="hero">
         <div className="container">

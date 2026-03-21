@@ -4,6 +4,20 @@ import { getBlogPosts } from '@/lib/supabase';
 export const metadata = {
   title: 'Blog — Free IT Certification Tips & Guides | CertQuiz',
   description: 'Free guides, study tips, and exam prep strategies for IT certification exams including CompTIA Security+, Azure, AWS, and CCNA.',
+  keywords: [
+    'IT certification study guide',
+    'CompTIA Security+ tips',
+    'certification exam prep',
+    'free IT study resources',
+    'Azure certification guide',
+    'AWS exam study tips',
+  ],
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    title: 'Blog — Free IT Certification Tips & Guides | CertQuiz',
+    description: 'Free guides, study tips, and exam prep strategies for IT certification exams.',
+    url: '/blog',
+  },
 };
 
 export default async function BlogPage() {

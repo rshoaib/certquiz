@@ -13,6 +13,8 @@ const inter = Inter({
 const GA_ID = 'G-44E1HZH6GD';
 
 export const metadata = {
+  metadataBase: new URL('https://www.getcertquiz.com'),
+  alternates: { canonical: '/' },
   title: 'CertQuiz — Free IT Certification Practice Tests',
   description:
     'Practice for CompTIA Security+, AWS, Azure, CCNA and more with free, interactive practice exams. Timed and study modes with instant feedback and detailed explanations.',
@@ -34,6 +36,14 @@ export const metadata = {
     description:
       'Pass your next IT certification exam with free practice tests. Security+, Azure, AWS, CCNA and more.',
     type: 'website',
+    siteName: 'CertQuiz',
+    locale: 'en_US',
+    url: 'https://www.getcertquiz.com',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CertQuiz — Free IT Certification Practice Tests',
+    description: 'Free practice tests for CompTIA Security+, Azure, AWS, CCNA and more.',
   },
 };
 
