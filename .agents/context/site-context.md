@@ -43,7 +43,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | Cluster | Primary Keyword | Search Intent | Status |
 |---|---|---|---|
 | Security+ Practice Test | "free comptia security+ practice test sy0-701" | Transactional | ✅ Tool Live |
-| Security+ Study Guide | "comptia security+ study guide 2026" | Informational | 🟡 Gap |
+| Security+ Study Guide | "comptia security+ study guide 2026" | Informational | ✅ Published |
 | Security+ vs CySA+ | "security+ vs cysa+ which to take first" | Commercial | 🟡 Gap |
 | Security+ Exam Tips | "sy0-701 exam tips pass first try" | Informational | 🟡 Gap |
 | Security+ Domains Breakdown | "security+ sy0-701 domains explained" | Informational | 🟡 Gap |
@@ -91,6 +91,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | # | Title | Slug | Published | Primary Keyword |
 |---|---|---|---|---|
+| 3 | CompTIA Security+ (SY0-701) Study Guide 2026 | comptia-security-plus-study-guide-2026 | Mar 23, 2026 | comptia security+ study guide 2026 |
 | 2 | Best Free VCE Exam Simulator Alternatives in 2026 | vce-exam-simulator-free-alternative-2026 | Mar 22, 2026 | vce exam simulator free alternative 2026 |
 | 1 | Free VCE Player Online | free-vce-player-online | Mar 18, 2026 | free vce player online no download |
 
@@ -102,7 +103,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | Priority | Keyword | Why High Priority |
 |---|---|---|
-| 🔴 1 | "comptia security+ study guide 2026" | Quiz is live — article supports the only active exam |
+| ✅ Published | "comptia security+ study guide 2026" | Quiz is live — article supports the only active exam |
 | 🔴 2 | "what is a vce file how to open it" | Informational intent — high volume, easy to rank |
 | 🔴 3 | "sy0-701 exam tips pass first try" | Supports Security+ pillar depth |
 | 🟠 4 | "aws cloud practitioner vs az-900 comparison" | Comparison — drives traffic to both coming-soon quizzes |
