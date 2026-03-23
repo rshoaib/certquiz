@@ -37,7 +37,7 @@ export async function getBlogPostBySlug(slug) {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return null;
   try {
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/blog_posts?slug=eq.${encodeURIComponent(slug)}&published=eq.true&select=*`,
+      `${SUPABASE_URL}/rest/v1/blog_posts?slug=eq.${encodeURIComponent(slug)}&published=eq.true&select=*&_cb=20260324_v2`,
       { headers, next: { revalidate: 3600 } }
     );
     if (!res.ok) return null;
