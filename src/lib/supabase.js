@@ -20,8 +20,8 @@ export async function getBlogPosts() {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return [];
   try {
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&order=created_at.desc&select=id,slug,title,description,category,tags,author,hero_image,created_at&_cb=20260324_v2`,
-      { headers, next: { revalidate: 3600 } }
+      `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&order=created_at.desc&select=id,slug,title,description,category,tags,author,hero_image,created_at`,
+      { headers, cache: 'no-store' }
     );
     if (!res.ok) return [];
     return res.json();
@@ -37,8 +37,8 @@ export async function getBlogPostBySlug(slug) {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return null;
   try {
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/blog_posts?slug=eq.${encodeURIComponent(slug)}&published=eq.true&select=*&_cb=20260324_v2`,
-      { headers, next: { revalidate: 3600 } }
+      `${SUPABASE_URL}/rest/v1/blog_posts?slug=eq.${encodeURIComponent(slug)}&published=eq.true&select=*`,
+      { headers, cache: 'no-store' }
     );
     if (!res.ok) return null;
     const data = await res.json();
@@ -56,7 +56,7 @@ export async function getAllBlogSlugs() {
   try {
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&select=slug`,
-      { headers, next: { revalidate: 3600 } }
+      { headers, cache: 'no-store' }
     );
     if (!res.ok) return [];
     return res.json();
