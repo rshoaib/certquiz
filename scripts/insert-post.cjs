@@ -57,13 +57,13 @@ async function main() {
     const content = fs.readFileSync('scripts/post.html', 'utf8');
 
     const article = {
-      slug: 'vce-exam-simulator-free-alternative-2026',
-      title: 'Best Free VCE Exam Simulator Alternatives in 2026 (No Download Required)',
-      description: 'Stop paying $40 for VCE Exam Simulator. Here are the best free alternatives for IT certification practice tests in 2026 — including CertQuiz, which runs entirely in your browser with zero downloads.',
-      hero_image: '/images/blog/vce-exam-simulator-free-alternative.png',
+      slug: 'comptia-security-plus-study-guide-2026',
+      title: 'CompTIA Security+ (SY0-701) Study Guide 2026: Pass Your Exam For Free',
+      description: 'Stop paying $400 for bootcamps. Our complete 30-day CompTIA Security+ (SY0-701) study guide breaks down the 5 domains, gives you free practice strategies, and provides free browser-based testing engines.',
+      hero_image: '/images/blog/comptia-security-plus-study-guide-hero.png',
       content: content,
-      category: 'exam-tools',
-      tags: ['vce', 'exam-simulator', 'free', 'practice-test', 'certification', '2026'],
+      category: 'certification-guides',
+      tags: ['security+', 'comptia', 'sy0-701', 'study-guide', 'certification', '2026'],
       author: 'CertQuiz Team',
       published: true
     };

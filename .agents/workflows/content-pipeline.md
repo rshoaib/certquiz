@@ -111,10 +111,19 @@ Before writing ANY content, read the context files for the target site:
 ### Phase 1: Research & Plan (Gemini 3.1 Pro)
 <!-- progress: "🔍 Phase 1/8: Researching keywords & reading context files..." -->
 // turbo
-1. **Read context files** — target keywords for content calendar, brand voice for tone
-2. Research trending keywords for the target site (web search)
-3. Cross-check target keywords for content gaps and priorities
-4. Identify the highest-impact topic (search volume × relevance × ease)
+1. **Read `site-context.md`** — check the **Content Priority Queue** section
+2. **Auto-Research Check** — count how many keywords are in the queue:
+   - ✅ **3+ keywords in queue** → pick the #1 priority keyword and continue to Phase 2
+   - ⚠️ **< 3 keywords in queue** → auto-run `/keyword-research` workflow first:
+     1. Extract 3-5 seed keywords from topic clusters
+     2. Expand via Google Autocomplete + People Also Ask (web search)
+     3. Score each keyword with the 4-Point Scorecard (Intent + Competition + Specificity + Link Value)
+     4. Competition deep-dive on top scorers (check Google page 1)
+     5. Cluster related keywords and update the Priority Queue in `site-context.md`
+     6. Then pick the new #1 priority keyword and continue
+   - 🔴 **Queue is empty** → same as above, but flag to user: "Queue was empty — running keyword research first"
+3. **Read brand voice** from context files for tone and formatting rules
+4. **Pick the #1 keyword** — this becomes the article's primary target
 5. Validate AdSense compliance for ad placement
 
 ### Phase 2: Competitor Scan (Gemini 3.1 Pro)
