@@ -10,7 +10,6 @@ const FALLBACK_BLOG_SLUGS = [
 ];
 
 export async function GET() {
-  // Static pages — always included
   const staticPages = [
     { url: BASE_URL, changeFrequency: 'weekly', priority: '1.0' },
     { url: `${BASE_URL}/blog`, changeFrequency: 'weekly', priority: '0.8' },
@@ -22,7 +21,6 @@ export async function GET() {
     { url: `${BASE_URL}/terms`, changeFrequency: 'yearly', priority: '0.3' },
   ];
 
-  // Dynamic blog posts from Supabase (with fallback)
   let blogSlugs = FALLBACK_BLOG_SLUGS;
   try {
     const slugs = await getAllBlogSlugs();
@@ -30,7 +28,7 @@ export async function GET() {
       blogSlugs = slugs.map((s) => s.slug);
     }
   } catch {
-    // Supabase unavailable — fall back to hardcoded slugs
+    // fallback
   }
 
   const blogPages = blogSlugs.map((slug) => ({
