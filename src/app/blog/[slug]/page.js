@@ -23,13 +23,13 @@ export async function generateMetadata({ params }) {
       type: 'article',
       publishedTime: post.created_at,
       authors: [post.author],
-      ...(post.image ? { images: [{ url: post.image, alt: post.title }] } : {}),
+      ...(post.hero_image ? { images: [{ url: post.hero_image, alt: post.title }] } : {}),
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      ...(post.image ? { images: [post.image] } : {}),
+      ...(post.hero_image ? { images: [post.hero_image] } : {}),
     },
   };
 }
@@ -51,7 +51,7 @@ export default async function BlogArticlePage({ params }) {
     datePublished: post.created_at,
     publisher: { '@type': 'Organization', name: 'CertQuiz', url: 'https://www.getcertquiz.com' },
     mainEntityOfPage: `https://www.getcertquiz.com/blog/${slug}`,
-    ...(post.image ? { image: post.image } : {}),
+    ...(post.hero_image ? { image: post.hero_image } : {}),
   };
 
   return (
@@ -73,9 +73,9 @@ export default async function BlogArticlePage({ params }) {
           <span>{post.display_date || new Date(post.created_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
         </div>
 
-        {post.image && (
+        {post.hero_image && (
           <img
-            src={post.image}
+            src={post.hero_image}
             alt={post.title}
             style={{ width: '100%', borderRadius: 'var(--radius-lg)', marginBottom: '2rem' }}
           />

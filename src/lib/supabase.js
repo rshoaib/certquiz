@@ -20,7 +20,7 @@ export async function getBlogPosts() {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return [];
   try {
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&order=created_at.desc&select=id,slug,title,description,category,tags,author,image,created_at`,
+      `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&order=created_at.desc&select=id,slug,title,description,category,tags,author,hero_image,created_at`,
       { headers, cache: 'no-store' }
     );
     if (!res.ok) return [];
