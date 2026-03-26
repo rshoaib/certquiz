@@ -13,7 +13,7 @@ export async function GET() {
   const staticPages = [
     { url: BASE_URL, changeFrequency: 'weekly', priority: '1.0' },
     { url: `${BASE_URL}/blog`, changeFrequency: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/quiz/security-plus`, changeFrequency: 'monthly', priority: '0.9' },
+    { url: `${BASE_URL}/quiz/security-plus-sy0-701`, changeFrequency: 'monthly', priority: '0.9' },
     { url: `${BASE_URL}/upload`, changeFrequency: 'monthly', priority: '0.8' },
     { url: `${BASE_URL}/about`, changeFrequency: 'monthly', priority: '0.5' },
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly', priority: '0.5' },

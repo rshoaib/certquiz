@@ -95,6 +95,22 @@ export default async function BlogArticlePage({ params }) {
             </div>
           </div>
         )}
+
+        {/* CTA Block for Internal Linking */}
+        <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'var(--bg-glass)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-glass)', textAlign: 'center' }}>
+          <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem' }}>Ready to Practice?</h3>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+            Try our free exam simulator. No signup, no paywall, 100% private.
+          </p>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href="/quiz/security-plus-sy0-701" className="btn btn-primary">
+              Take Security+ Quiz
+            </a>
+            <a href="/upload" className="btn btn-secondary">
+              Upload Your VCE/PDF
+            </a>
+          </div>
+        </div>
       </div>
     </article>
   );
