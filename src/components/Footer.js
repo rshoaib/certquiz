@@ -28,6 +28,15 @@ export default function Footer() {
               <li><Link href="/terms" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.85rem' }}>Terms of Service</Link></li>
             </ul>
           </div>
+          <div>
+            <h4 style={{ fontWeight: 700, marginBottom: '0.75rem', fontSize: '0.95rem' }}>More Free Tools</h4>
+            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li><a href="https://legalpolicygen.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.85rem' }}>Legal Policy Generator</a></li>
+              <li><a href="https://onlineimageshrinker.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.85rem' }}>Image Compressor</a></li>
+              <li><a href="https://tinypdftools.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.85rem' }}>PDF Tools</a></li>
+              <li><a href="https://dailysmartcalc.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.85rem' }}>Smart Calculators</a></li>
+            </ul>
+          </div>
         </div>
         <div style={{ borderTop: '1px solid var(--border-glass)', paddingTop: '1.5rem' }}>
           <p>© {year} CertQuiz — Free IT Certification Practice Tests</p>
