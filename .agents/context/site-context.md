@@ -45,7 +45,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | Security+ Practice Test | "free comptia security+ practice test sy0-701" | Transactional | ✅ Tool Live |
 | Security+ Study Guide | "comptia security+ study guide 2026" | Informational | ✅ Published |
 | Security+ vs CySA+ | "security+ vs cysa+ which to take first" | Commercial | 🟡 Gap |
-| Security+ Exam Tips | "sy0-701 exam tips pass first try" | Informational | 🟡 Gap |
+| Security+ Exam Tips | "sy0-701 exam tips pass first try" | Informational | ✅ Published |
 | Security+ Domains Breakdown | "security+ sy0-701 domains explained" | Informational | 🟡 Gap |
 | CompTIA A+ Overview | "comptia a+ worth it 2026" | Informational | 🟡 Gap |
 | CompTIA Network+ | "network+ n10-009 study guide" | Informational | 🟡 Gap |
@@ -55,7 +55,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 |---|---|---|---|
 | AWS CCP Practice Test | "free aws cloud practitioner practice test clf-c02" | Transactional | 🔜 Tool Coming |
 | AWS CCP Study Guide | "aws cloud practitioner study guide 2026" | Informational | 🟡 Gap |
-| AWS CCP vs AZ-900 | "aws cloud practitioner vs az-900 comparison" | Commercial | 🟡 Gap |
+| AWS CCP vs AZ-900 | "aws cloud practitioner vs az-900 comparison" | Commercial | ✅ Published |
 | AWS Certification Path | "aws certification path for beginners 2026" | Informational | 🟡 Gap |
 
 ### Pillar 3: Cloud Certifications (Azure)
@@ -79,7 +79,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 |---|---|---|---|
 | Free VCE Player | "free vce player online no download" | Transactional | ✅ Tool Live |
 | VCE to PDF | "vce to pdf converter free" | Transactional | 🟡 Gap |
-| VCE File Explained | "what is a vce file how to open it" | Informational | 🟡 Gap |
+| VCE File Explained | "what is a vce file how to open it" | Informational | ✅ Published |
 | VCE Simulator Alternatives | "vce exam simulator free alternative 2026" | Commercial | ✅ Published |
 | Best Free Exam Dumps | "best free it certification practice tests 2026" | Commercial | 🟡 Gap |
 
@@ -91,8 +91,10 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | # | Title | Slug | Published | Primary Keyword |
 |---|---|---|---|---|
+| 6 | AWS Cloud Practitioner vs Azure AZ-900 Comparison | aws-cloud-practitioner-vs-az-900-comparison | Apr 1, 2026 | aws cloud practitioner vs az-900 comparison |
+| 5 | 7 Proven CompTIA Security+ (SY0-701) Exam Tips | sy0-701-exam-tips-pass-first-try | Mar 29, 2026 | sy0-701 exam tips pass first try |
 | 4 | What is a VCE File and How to Open It (Free 2026 Guide) | what-is-a-vce-file-how-to-open-it | Mar 26, 2026 | what is a vce file how to open it |
-| 3 | CompTIA Security+ (SY0-701) Study Guide 2026 | comptia-security-plus-study-guide-2026 | Mar 23, 2026 | comptia security+ study guide 2026 |
+| 3 | CompTIA Security+ (SY0-701) Study Guide 2026 | comptia-security-plus-study-guide-2026 | Mar 24, 2026 | comptia security+ study guide 2026 |
 | 2 | Best Free VCE Exam Simulator Alternatives in 2026 | vce-exam-simulator-free-alternative-2026 | Mar 22, 2026 | vce exam simulator free alternative 2026 |
 | 1 | Free VCE Player Online | free-vce-player-online | Mar 18, 2026 | free vce player online no download |
 
@@ -106,6 +108,8 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 |---|---|---|
 | ✅ Published | "comptia security+ study guide 2026" | Quiz is live — article supports the only active exam |
 | ✅ Published | "what is a vce file how to open it" | Informational intent — high volume, easy to rank |
-| 🔴 3 | "sy0-701 exam tips pass first try" | Supports Security+ pillar depth |
-| 🟠 4 | "aws cloud practitioner vs az-900 comparison" | Comparison — drives traffic to both coming-soon quizzes |
-| 🟠 5 | "security+ vs cysa+ which to take first" | Comparison — builds CompTIA pillar authority |
+| ✅ Published | "sy0-701 exam tips pass first try" | Supports Security+ pillar depth |
+| ✅ Published | "aws cloud practitioner vs az-900 comparison" | Comparison — drives traffic to both coming-soon quizzes |
+| 🔴 1 | "security+ vs cysa+ which to take first" | Comparison — builds CompTIA pillar authority |
+| 🟠 2 | "aws cloud practitioner study guide 2026" | Supports AWS pillar, pairs with published comparison |
+| 🟠 3 | "az-900 fundamentals study guide 2026" | Supports Azure pillar, pairs with published comparison |
