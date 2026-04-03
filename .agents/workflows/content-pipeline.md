@@ -32,7 +32,7 @@ Example: "✍️ Phase 3/7: Writing article draft..."
 
 | # | Site | Stack | Purpose | Revenue Model |
 |---|------|-------|---------|---------------|
-| 1 | **orderviachat.com** | Next.js + Supabase | WhatsApp ordering SaaS | SaaS subscriptions |
+| 1 | **orderviachat.com** | Next.js | WhatsApp ordering SaaS | SaaS subscriptions |
 | 2 | **dailysmartcalc.com** | Static/Next.js | Calculator tools | AdSense |
 | 3 | **onlineimageshrinker.com** | Static/Next.js | Image compression | AdSense |
 | 4 | **legalpolicygen.com** | Static/Next.js | Legal policy generator | AdSense |
@@ -73,7 +73,7 @@ Before writing ANY content, read the context files for the target site:
 ### Phase 0: Publishing Frequency Check
 <!-- progress: "📊 Phase 0/8: Checking publishing frequency..." -->
 // turbo
-1. **Identify the site's blog data source** — scan the data file (e.g., `data/blog.ts`, `src/data/articles.js`) or query the database (Supabase `blog_posts` table) to get all articles with their `published_at` / `date` fields.
+1. **Identify the site's blog data source** — scan the data file (e.g., `data/blog.ts`, `src/data/articles.js`, `src/data/blog-posts.json`) to get all articles with their `published_at` / `date` fields.
 2. **Calculate stats** using today's date and the current Mon–Sun week:
    - 📦 Total articles ever published
    - 📅 Last published date
@@ -170,9 +170,8 @@ Before writing ANY content, read the context files for the target site:
 
 ### Phase 5: Code Implementation (Claude Opus 4.5)
 <!-- progress: "💻 Phase 5/8: Adding article to codebase..." -->
-21. Add article to site's data file or database (e.g., `articles.js` or Supabase `blog_posts` table)
-22. **⚠️ CRITICAL — Supabase Insert Scripts**: Always use the **service_role key** (NOT the anon key) in seed/insert scripts. The anon key is blocked by RLS on INSERT (returns `401 / 42501`). Look for `"role":"service_role"` in the base64 JWT payload from existing working scripts.
-23. Reference the hero image in the article metadata (if supported)
+21. Add article to site's data file (e.g., `articles.js` or `src/data/blog-posts.json`)
+22. Reference the hero image in the article metadata (if supported)
 24. Verify icon is imported in BlogList component
 25. Add programmatic SEO pages if applicable
 

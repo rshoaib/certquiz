@@ -1,7 +1,7 @@
 # CertQuiz — Site Context
 
 > **URL**: https://www.getcertquiz.com
-> **Stack**: Next.js + Supabase (blog)
+> **Stack**: Next.js (static blog via local JSON)
 > **Revenue**: AdSense
 > **Core Value**: Free IT certification practice tests — no signup, no paywall, 100% client-side privacy.
 
