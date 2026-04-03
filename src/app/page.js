@@ -26,6 +26,7 @@ export const metadata = {
     title: 'CertQuiz — Free IT Certification Practice Tests',
     description: 'Upload VCE, PDF, DOCX files and practice instantly. Free, no signup, 100% private.',
     url: '/',
+    images: [{ url: '/images/blog/aws-vs-azure-hero.png', width: 1024, height: 1024, alt: 'CertQuiz — Free IT Certification Practice Tests' }],
   },
 };
 
@@ -132,8 +133,8 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <h1>
-            Stop Paying for{' '}
-            <span className="gradient-text">Exam Simulators</span>
+            Free IT Certification{' '}
+            <span className="gradient-text">Practice Tests</span>
           </h1>
           <p>
             Upload your VCE, PDF, or Word file and practice instantly — free, in your browser.
@@ -167,7 +168,7 @@ export default function Home() {
       {/* Pain Points → Solutions */}
       <section className="container" style={{ paddingBottom: '2rem' }}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1.5rem', textAlign: 'center' }}>
-          😤 Sound Familiar?
+          Sound Familiar?
         </h2>
         <div className="exam-grid">
           <div className="glass-card" style={{ padding: '1.5rem', cursor: 'default' }}>
@@ -221,7 +222,7 @@ export default function Home() {
       {/* Exam Grid */}
       <section className="container" style={{ paddingBottom: '2rem' }}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-          📚 Pre-Built Practice Exams
+          Pre-Built Practice Exams
         </h2>
         <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>
           Don&apos;t have your own questions? Start with our curated question banks. Study mode gives instant feedback, timed mode simulates the real exam.
@@ -236,7 +237,7 @@ export default function Home() {
       {/* How It Works */}
       <section className="container" style={{ paddingBottom: '2rem' }}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1.5rem', textAlign: 'center' }}>
-          ⚡ How It Works
+          How It Works
         </h2>
         <div className="exam-grid">
           <div className="glass-card" style={{ padding: '1.5rem', cursor: 'default', textAlign: 'center' }}>
@@ -266,7 +267,7 @@ export default function Home() {
       {/* Features / Why CertQuiz */}
       <section className="container" style={{ paddingBottom: '3rem' }}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1.5rem', textAlign: 'center' }}>
-          ✨ Why CertQuiz?
+          Why CertQuiz?
         </h2>
         <div className="exam-grid">
           <div className="glass-card" style={{ padding: '1.5rem', cursor: 'default' }}>

@@ -12,6 +12,16 @@ const inter = Inter({
 
 const GA_ID = 'G-44E1HZH6GD';
 
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'CertQuiz',
+  url: 'https://www.getcertquiz.com',
+  logo: 'https://www.getcertquiz.com/favicon.ico',
+  description: 'Free IT certification practice tests. Upload VCE, PDF, or Word files and practice instantly in your browser.',
+  sameAs: ['https://github.com/rshoaib/certquiz'],
+};
+
 export const metadata = {
   metadataBase: new URL('https://www.getcertquiz.com'),
   alternates: { canonical: '/' },
@@ -66,6 +76,10 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />

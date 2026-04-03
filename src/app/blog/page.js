@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPosts } from '@/lib/blog';
 
 export const metadata = {
@@ -26,7 +27,7 @@ export default async function BlogPage() {
   return (
     <div className="container" style={{ paddingTop: '2rem', paddingBottom: '3rem' }}>
       <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>
-        📝 CertQuiz Blog
+        CertQuiz Blog
       </h1>
       <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', maxWidth: '600px' }}>
         Free study guides, exam tips, and certification strategies to help you pass your next IT exam.
@@ -49,10 +50,13 @@ export default async function BlogPage() {
             >
               <article className="glass-card blog-card">
                 {post.hero_image && (
-                  <img
+                  <Image
                     src={post.hero_image}
                     alt={post.title}
+                    width={740}
+                    height={400}
                     className="blog-card-image"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 )}
                 <div className="blog-card-content">

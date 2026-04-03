@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { getBlogPostBySlug, getAllBlogSlugs } from '@/lib/blog';
 import { notFound } from 'next/navigation';
 
@@ -51,7 +52,17 @@ export default async function BlogArticlePage({ params }) {
     datePublished: post.created_at,
     publisher: { '@type': 'Organization', name: 'CertQuiz', url: 'https://www.getcertquiz.com' },
     mainEntityOfPage: `https://www.getcertquiz.com/blog/${slug}`,
-    ...(post.hero_image ? { image: post.hero_image } : {}),
+    ...(post.hero_image ? { image: `https://www.getcertquiz.com${post.hero_image}` } : {}),
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.getcertquiz.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.getcertquiz.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title },
+    ],
   };
 
   return (
@@ -59,6 +70,10 @@ export default async function BlogArticlePage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <div style={{ maxWidth: '740px', margin: '0 auto' }}>
         <span className="blog-card-category" style={{ marginBottom: '0.75rem', display: 'inline-block' }}>
@@ -74,10 +89,14 @@ export default async function BlogArticlePage({ params }) {
         </div>
 
         {post.hero_image && (
-          <img
+          <Image
             src={post.hero_image}
             alt={post.title}
-            style={{ width: '100%', borderRadius: 'var(--radius-lg)', marginBottom: '2rem' }}
+            width={740}
+            height={400}
+            sizes="(max-width: 768px) 100vw, 740px"
+            priority
+            style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', marginBottom: '2rem' }}
           />
         )}
 
