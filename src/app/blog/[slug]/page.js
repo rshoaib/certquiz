@@ -1,4 +1,4 @@
-import { getBlogPostBySlug, getAllBlogSlugs } from '@/lib/supabase';
+import { getBlogPostBySlug, getAllBlogSlugs } from '@/lib/blog';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {

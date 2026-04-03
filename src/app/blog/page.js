@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getBlogPosts } from '@/lib/supabase';
+import { getBlogPosts } from '@/lib/blog';
 
 export const metadata = {
   title: 'Blog — Free IT Certification Tips & Guides | CertQuiz',

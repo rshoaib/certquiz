@@ -1,13 +1,6 @@
-import { getAllBlogSlugs } from '@/lib/supabase';
+import { getAllBlogSlugs } from '@/lib/blog';
 
 const BASE_URL = 'https://www.getcertquiz.com';
-
-// Hardcoded fallback slugs — keeps sitemap alive even if Supabase is down
-const FALLBACK_BLOG_SLUGS = [
-  'free-vce-player-online',
-  'vce-exam-simulator-free-alternative-2026',
-  'comptia-security-plus-study-guide-2026',
-];
 
 export async function GET() {
   const staticPages = [
@@ -21,18 +14,9 @@ export async function GET() {
     { url: `${BASE_URL}/terms`, changeFrequency: 'yearly', priority: '0.3' },
   ];
 
-  let blogSlugs = FALLBACK_BLOG_SLUGS;
-  try {
-    const slugs = await getAllBlogSlugs();
-    if (Array.isArray(slugs) && slugs.length > 0) {
-      blogSlugs = slugs.map((s) => s.slug);
-    }
-  } catch {
-    // fallback
-  }
-
-  const blogPages = blogSlugs.map((slug) => ({
-    url: `${BASE_URL}/blog/${slug}`,
+  const blogSlugs = getAllBlogSlugs();
+  const blogPages = blogSlugs.map((s) => ({
+    url: `${BASE_URL}/blog/${s.slug}`,
     changeFrequency: 'monthly',
     priority: '0.7',
   }));
