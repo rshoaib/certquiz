@@ -30,6 +30,9 @@ export default async function BlogPage() {
       </h1>
       <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', maxWidth: '600px' }}>
         Free study guides, exam tips, and certification strategies to help you pass your next IT exam.
+        <span style={{ display: 'inline-block', marginLeft: '0.5rem', padding: '0.15rem 0.5rem', fontSize: '0.8rem', fontWeight: 600, borderRadius: '999px', backgroundColor: 'var(--bg-glass)', border: '1px solid var(--border-glass)' }}>
+          {posts.length} {posts.length === 1 ? 'article' : 'articles'}
+        </span>
       </p>
 
       {posts.length === 0 ? (
@@ -40,7 +43,7 @@ export default async function BlogPage() {
         <div className="blog-grid">
           {posts.map((post) => (
             <Link
-              key={post.id}
+              key={post.slug}
               href={`/blog/${post.slug}`}
               style={{ textDecoration: 'none', color: 'inherit' }}
             >
