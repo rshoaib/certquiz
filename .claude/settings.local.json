@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(/.claude/skills/write-post/**)",
+      "WebSearch",
+      "WebFetch(domain:www.stationx.net)",
+      "WebFetch(domain:epicdetect.io)",
+      "WebFetch(domain:www.cbtnuggets.com)",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:www.getcertquiz.com)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:search.google.com)"
+    ]
+  }
+}
