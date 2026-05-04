@@ -54,7 +54,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | Cluster | Primary Keyword | Search Intent | Status |
 |---|---|---|---|
 | AWS CCP Practice Test | "free aws cloud practitioner practice test clf-c02" | Transactional | 🔜 Tool Coming |
-| AWS CCP Study Guide | "aws cloud practitioner study guide 2026" | Informational | 🟡 Gap |
+| AWS CCP Study Guide | "aws cloud practitioner study guide 2026" | Informational | ✅ Published |
 | AWS CCP vs AZ-900 | "aws cloud practitioner vs az-900 comparison" | Commercial | ✅ Published |
 | AWS Certification Path | "aws certification path for beginners 2026" | Informational | 🟡 Gap |
 
@@ -91,6 +91,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | # | Title | Slug | Published | Primary Keyword |
 |---|---|---|---|---|
+| 8 | AWS Cloud Practitioner (CLF-C02) Study Guide 2026: Pass Free | aws-cloud-practitioner-study-guide-2026 | May 4, 2026 | aws cloud practitioner study guide 2026 |
 | 7 | Security+ vs CySA+: Which to Take First? (2026) | security-plus-vs-cysa-plus-which-to-take-first | Apr 3, 2026 | security+ vs cysa+ which to take first |
 | 6 | AWS Cloud Practitioner vs Azure AZ-900 Comparison | aws-cloud-practitioner-vs-az-900-comparison | Apr 1, 2026 | aws cloud practitioner vs az-900 comparison |
 | 5 | 7 Proven CompTIA Security+ (SY0-701) Exam Tips | sy0-701-exam-tips-pass-first-try | Mar 29, 2026 | sy0-701 exam tips pass first try |
@@ -112,5 +113,5 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | ✅ Published | "sy0-701 exam tips pass first try" | Supports Security+ pillar depth |
 | ✅ Published | "aws cloud practitioner vs az-900 comparison" | Comparison — drives traffic to both coming-soon quizzes |
 | ✅ Published | "security+ vs cysa+ which to take first" | Comparison — builds CompTIA pillar authority |
-| 🔴 1 | "aws cloud practitioner study guide 2026" | Supports AWS pillar, pairs with published comparison |
+| ✅ Published | "aws cloud practitioner study guide 2026" | Supports AWS pillar, pairs with published comparison |
 | 🟠 2 | "az-900 fundamentals study guide 2026" | Supports Azure pillar, pairs with published comparison |
