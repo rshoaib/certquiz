@@ -62,7 +62,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | Cluster | Primary Keyword | Search Intent | Status |
 |---|---|---|---|
 | AZ-104 Practice Test | "free azure az-104 practice exam" | Transactional | 🔜 Tool Coming |
-| AZ-900 Study Guide | "az-900 fundamentals study guide 2026" | Informational | 🟡 Gap |
+| AZ-900 Study Guide | "az-900 fundamentals study guide 2026" | Informational | ✅ Published |
 | AZ-104 vs AZ-900 | "az-104 vs az-900 which first" | Commercial | 🟡 Gap |
 | Azure Certification Path | "azure certification path 2026" | Informational | 🟡 Gap |
 
@@ -91,6 +91,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | # | Title | Slug | Published | Primary Keyword |
 |---|---|---|---|---|
+| 9 | AZ-900 Azure Fundamentals Study Guide 2026: Pass Free | az-900-azure-fundamentals-study-guide-2026 | May 5, 2026 | az-900 fundamentals study guide 2026 |
 | 8 | AWS Cloud Practitioner (CLF-C02) Study Guide 2026: Pass Free | aws-cloud-practitioner-study-guide-2026 | May 4, 2026 | aws cloud practitioner study guide 2026 |
 | 7 | Security+ vs CySA+: Which to Take First? (2026) | security-plus-vs-cysa-plus-which-to-take-first | Apr 3, 2026 | security+ vs cysa+ which to take first |
 | 6 | AWS Cloud Practitioner vs Azure AZ-900 Comparison | aws-cloud-practitioner-vs-az-900-comparison | Apr 1, 2026 | aws cloud practitioner vs az-900 comparison |
@@ -113,5 +114,4 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | ✅ Published | "sy0-701 exam tips pass first try" | Supports Security+ pillar depth |
 | ✅ Published | "aws cloud practitioner vs az-900 comparison" | Comparison — drives traffic to both coming-soon quizzes |
 | ✅ Published | "security+ vs cysa+ which to take first" | Comparison — builds CompTIA pillar authority |
-| ✅ Published | "aws cloud practitioner study guide 2026" | Supports AWS pillar, pairs with published comparison |
-| 🟠 2 | "az-900 fundamentals study guide 2026" | Supports Azure pillar, pairs with published comparison |
+| ✅ Published | "aws cloud practitioner study guide 2026" |
