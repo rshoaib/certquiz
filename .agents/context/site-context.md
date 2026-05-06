@@ -46,7 +46,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | Security+ Study Guide | "comptia security+ study guide 2026" | Informational | ✅ Published |
 | Security+ vs CySA+ | "security+ vs cysa+ which to take first" | Commercial | ✅ Published |
 | Security+ Exam Tips | "sy0-701 exam tips pass first try" | Informational | ✅ Published |
-| Security+ Domains Breakdown | "security+ sy0-701 domains explained" | Informational | 🟡 Gap |
+| Security+ Domains Breakdown | "security+ sy0-701 domains explained" | Informational | ✅ Published |
 | CompTIA A+ Overview | "comptia a+ worth it 2026" | Informational | 🟡 Gap |
 | CompTIA Network+ | "network+ n10-009 study guide" | Informational | 🟡 Gap |
 
@@ -91,6 +91,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | # | Title | Slug | Published | Primary Keyword |
 |---|---|---|---|---|
+| 10 | Security+ SY0-701 Domains Explained: 2026 Breakdown | security-plus-sy0-701-domains-explained | May 6, 2026 | security+ sy0-701 domains explained |
 | 9 | AZ-900 Azure Fundamentals Study Guide 2026: Pass Free | az-900-azure-fundamentals-study-guide-2026 | May 5, 2026 | az-900 fundamentals study guide 2026 |
 | 8 | AWS Cloud Practitioner (CLF-C02) Study Guide 2026: Pass Free | aws-cloud-practitioner-study-guide-2026 | May 4, 2026 | aws cloud practitioner study guide 2026 |
 | 7 | Security+ vs CySA+: Which to Take First? (2026) | security-plus-vs-cysa-plus-which-to-take-first | Apr 3, 2026 | security+ vs cysa+ which to take first |
@@ -115,3 +116,4 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | ✅ Published | "aws cloud practitioner vs az-900 comparison" | Comparison — drives traffic to both coming-soon quizzes |
 | ✅ Published | "security+ vs cysa+ which to take first" | Comparison — builds CompTIA pillar authority |
 | ✅ Published | "aws cloud practitioner study guide 2026" |
+| ✅ Published | "security+ sy0-701 domains explained" | Drives the only live quiz; deepens Security+ pillar authority |
