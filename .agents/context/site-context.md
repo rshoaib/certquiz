@@ -63,7 +63,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 |---|---|---|---|
 | AZ-104 Practice Test | "free azure az-104 practice exam" | Transactional | 🔜 Tool Coming |
 | AZ-900 Study Guide | "az-900 fundamentals study guide 2026" | Informational | ✅ Published |
-| AZ-104 vs AZ-900 | "az-104 vs az-900 which first" | Commercial | 🟡 Gap |
+| AZ-104 vs AZ-900 | "az-104 vs az-900 which first" | Commercial | ✅ Published |
 | Azure Certification Path | "azure certification path 2026" | Informational | 🟡 Gap |
 
 ### Pillar 4: Networking (Cisco)
@@ -91,6 +91,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | # | Title | Slug | Published | Primary Keyword |
 |---|---|---|---|---|
+| 11 | AZ-104 vs AZ-900: Which Azure Cert First in 2026? | az-104-vs-az-900-which-first | May 7, 2026 | az-104 vs az-900 which first |
 | 10 | Security+ SY0-701 Domains Explained: 2026 Breakdown | security-plus-sy0-701-domains-explained | May 6, 2026 | security+ sy0-701 domains explained |
 | 9 | AZ-900 Azure Fundamentals Study Guide 2026: Pass Free | az-900-azure-fundamentals-study-guide-2026 | May 5, 2026 | az-900 fundamentals study guide 2026 |
 | 8 | AWS Cloud Practitioner (CLF-C02) Study Guide 2026: Pass Free | aws-cloud-practitioner-study-guide-2026 | May 4, 2026 | aws cloud practitioner study guide 2026 |
