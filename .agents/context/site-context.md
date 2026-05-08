@@ -70,7 +70,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | Cluster | Primary Keyword | Search Intent | Status |
 |---|---|---|---|
 | CCNA Practice Test | "free ccna 200-301 practice test" | Transactional | 🔜 Tool Coming |
-| CCNA Study Guide | "ccna 200-301 study guide 2026" | Informational | 🟡 Gap |
+| CCNA Study Guide | "ccna 200-301 study guide 2026" | Informational | ✅ Published |
 | CCNA vs Network+ | "ccna vs comptia network+ comparison" | Commercial | 🟡 Gap |
 | CCNA Lab Setup | "ccna home lab setup guide" | Informational | 🟡 Gap |
 
@@ -91,6 +91,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | # | Title | Slug | Published | Primary Keyword |
 |---|---|---|---|---|
+| 12 | CCNA 200-301 Study Guide 2026: Pass Free, No Signup | ccna-200-301-study-guide-2026 | May 8, 2026 | ccna 200-301 study guide 2026 |
 | 11 | AZ-104 vs AZ-900: Which Azure Cert First in 2026? | az-104-vs-az-900-which-first | May 7, 2026 | az-104 vs az-900 which first |
 | 10 | Security+ SY0-701 Domains Explained: 2026 Breakdown | security-plus-sy0-701-domains-explained | May 6, 2026 | security+ sy0-701 domains explained |
 | 9 | AZ-900 Azure Fundamentals Study Guide 2026: Pass Free | az-900-azure-fundamentals-study-guide-2026 | May 5, 2026 | az-900 fundamentals study guide 2026 |
@@ -116,5 +117,4 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | ✅ Published | "sy0-701 exam tips pass first try" | Supports Security+ pillar depth |
 | ✅ Published | "aws cloud practitioner vs az-900 comparison" | Comparison — drives traffic to both coming-soon quizzes |
 | ✅ Published | "security+ vs cysa+ which to take first" | Comparison — builds CompTIA pillar authority |
-| ✅ Published | "aws cloud practitioner study guide 2026" |
-| ✅ Published | "security+ sy0-701 domains explained" | Drives the only live quiz; deepens Security+ pillar authority |
+| ✅ Published | "aws cloud practitione
