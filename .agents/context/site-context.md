@@ -48,7 +48,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | Security+ Exam Tips | "sy0-701 exam tips pass first try" | Informational | ✅ Published |
 | Security+ Domains Breakdown | "security+ sy0-701 domains explained" | Informational | ✅ Published |
 | CompTIA A+ Overview | "comptia a+ worth it 2026" | Informational | 🟡 Gap |
-| CompTIA Network+ | "network+ n10-009 study guide" | Informational | 🟡 Gap |
+| CompTIA Network+ | "network+ n10-009 study guide" | Informational | ✅ Published |
 
 ### Pillar 2: Cloud Certifications (AWS)
 | Cluster | Primary Keyword | Search Intent | Status |
@@ -91,6 +91,7 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 
 | # | Title | Slug | Published | Primary Keyword |
 |---|---|---|---|---|
+| 13 | Network+ N10-009 Study Guide 2026: Pass Free, No Signup | comptia-network-plus-n10-009-study-guide-2026 | May 11, 2026 | network+ n10-009 study guide |
 | 12 | CCNA 200-301 Study Guide 2026: Pass Free, No Signup | ccna-200-301-study-guide-2026 | May 8, 2026 | ccna 200-301 study guide 2026 |
 | 11 | AZ-104 vs AZ-900: Which Azure Cert First in 2026? | az-104-vs-az-900-which-first | May 7, 2026 | az-104 vs az-900 which first |
 | 10 | Security+ SY0-701 Domains Explained: 2026 Breakdown | security-plus-sy0-701-domains-explained | May 6, 2026 | security+ sy0-701 domains explained |
@@ -117,4 +118,4 @@ Use these for cross-linking in blog articles. Minimum 3 per article.
 | ✅ Published | "sy0-701 exam tips pass first try" | Supports Security+ pillar depth |
 | ✅ Published | "aws cloud practitioner vs az-900 comparison" | Comparison — drives traffic to both coming-soon quizzes |
 | ✅ Published | "security+ vs cysa+ which to take first" | Comparison — builds CompTIA pillar authority |
-| ✅ Published | "aws cloud practitione
+| ✅ Published | "a
