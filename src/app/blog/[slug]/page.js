@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { getBlogPostBySlug, getAllBlogSlugs } from '@/lib/blog';
 import { notFound } from 'next/navigation';
 
@@ -122,9 +123,9 @@ export default async function BlogArticlePage({ params }) {
             Try our free exam simulator. No signup, no paywall, 100% private.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/quiz/security-plus-sy0-701" className="btn btn-primary">
+            <Link href="/quiz/security-plus-sy0-701" className="btn btn-primary">
               Take Security+ Quiz
-            </a>
+            </Link>
             <a href="/upload" className="btn btn-secondary">
               Upload Your VCE/PDF
             </a>
@@ -134,4 +135,3 @@ export default async function BlogArticlePage({ params }) {
     </article>
   );
 }
-

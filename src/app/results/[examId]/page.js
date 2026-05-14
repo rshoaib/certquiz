@@ -12,9 +12,9 @@ export default function ResultsPage() {
 
   useEffect(() => {
     const stored = sessionStorage.getItem('certquiz_last_result');
-    if (stored) {
-      setResult(JSON.parse(stored));
-    }
+    if (!stored) return;
+    const parsed = JSON.parse(stored);
+    setTimeout(() => setResult(parsed), 0);
   }, []);
 
   if (!result) {
